@@ -1,0 +1,23 @@
+import java.util.*;
+class Main{
+    public static void reverse_of_string(String str)
+    {
+        String rev_str="";
+        char ch;
+        for (int i=0;i<str.length();i++)
+        {
+            ch=str.charAt(i);
+            rev_str=ch+rev_str;
+        }
+      
+        System.out.println("reverse String:"+rev_str);
+        
+    }
+    public static void main (String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String str=sc.next();
+        
+        reverse_of_string(str);
+    }
+}
